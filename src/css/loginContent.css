@@ -1,0 +1,54 @@
+/* Contenedor centrado del formulario */
+.login-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+/* Estilo de los inputs */
+.login-form .form-control {
+  /* background-color: rgba(255, 255, 255, 0.9);
+  border: none; */
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  border-radius: 4px;
+  /* padding: 0 10px 0 45px !important; */
+  backdrop-filter: blur(10px);
+}
+
+.login-form input::placeholder {
+  color: #ffffff;
+}
+.input-group-text {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: none; /* evitar borde doble entre icono e input */
+  color: #ffffff;
+  /* border-radius: 4px 0 0 4px; */
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo del botón */
+.login-form button {
+  background-color: var(--primary);
+  border: none;
+}
+
+.login-form button:hover {
+  color: var(--primary) !important;
+  background: #ffffff !important;
+  cursor: pointer !important;
+}

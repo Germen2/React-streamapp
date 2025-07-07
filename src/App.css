@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #265685;
+}
+
+body {
+  background: #000000 !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

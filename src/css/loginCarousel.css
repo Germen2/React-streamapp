@@ -1,0 +1,33 @@
+.carousel,
+.carousel .carousel-item,
+.carousel .carousel-item img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-caption {
+  display: none !important;
+}
+
+.carousel .carousel-item {
+  position: relative; /* Para posicionar el overlay dentro */
+}
+
+.carousel .carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* negro con 40% de opacidad */
+  z-index: 1;
+}
+
+.carousel .carousel-item img {
+  position: relative;
+  z-index: 0;
+}

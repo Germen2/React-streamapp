@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Superman",
+    "details": {
+      "cast": [
+        { "actor": "David Corenswet", "character": "Clark Kent / Superman" },
+        { "actor": "Rachel Brosnahan", "character": "Lois Lane" },
+        { "actor": "Nicholas Hoult", "character": "Lex Luthor" }
+      ],
+      "director": "James Gunn"
+    }
+  }
+]

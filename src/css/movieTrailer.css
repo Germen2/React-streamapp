@@ -1,0 +1,36 @@
+.banner .trailer {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  z-index: 1000;
+}
+
+.banner .trailer.active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.trailer h4 {
+  font-size: 35px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.trailer p {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.trailer iframe {
+  width: 500px;
+  height: 315px;
+}

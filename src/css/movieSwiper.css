@@ -1,0 +1,27 @@
+.swiper {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.movieSwiper {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  align-items: center;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 200px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}

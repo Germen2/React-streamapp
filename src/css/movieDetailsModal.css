@@ -1,0 +1,29 @@
+.movieDetailsModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  inset: 0; /* equivale a top: 0; right: 0; bottom: 0; left: 0 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  z-index: 1500;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+.movieDetailsModal .modalClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.movieDetailsModal.active {
+  opacity: 1;
+  visibility: visible;
+}
