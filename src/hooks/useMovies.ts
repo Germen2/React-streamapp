@@ -6,7 +6,7 @@ export function useMovies() {
   const [movies, setMovies] = useState<MovieInterface[]>([]);
 
   const fetchData = () => {
-    fetch("http://localhost:5173/data/movies.json") //esta ruta es de donde obtendras la data (backend)
+    fetch("/data/movies.json") //esta ruta es de donde obtendras la data (backend)
       .then((res) => res.json())
       .then((data: MovieInterface[]) => setMovies(data))
       .then()
