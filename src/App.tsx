@@ -13,7 +13,6 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/trending" element={<TrendPage />} />
         <Route path="/movies" element={<MoviesPage />} />
-        {/* <Route path="/movie/:id" element={<MovieDetailsPage />} /> */}
         <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
