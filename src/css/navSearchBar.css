@@ -32,3 +32,31 @@
   color: #ffffff;
   border-right: 1px solid #ffffff;
 }
+
+.search-results {
+  position: absolute;
+  top: 100%; /* justo debajo del input */
+  left: 0;
+  width: 100%;
+  max-height: 200px; /* altura máxima con scroll si hay muchas sugerencias */
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.8); /* similar al input */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  margin-top: 5px;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  padding: 0;
+  list-style: none;
+}
+
+.search-results li {
+  padding: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-results li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

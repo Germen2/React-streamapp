@@ -1,16 +1,25 @@
 export interface MovieContentInterface {
   id: number;
   title: string;
-  year: string;
-  date: string;
-  length: string;
-  category: string[];
   description: string;
-  buy: string;
-  rent: string;
+  categories: MovieCategory[];
+  //img: string;
+  //banner: string;
+  releaseDate: string;
+  year: string;
+  length: string;
+  //trailer: string;
   active: boolean;
-  trending: {
-    status: boolean;
-    number: number;
-  };
+  buy: number;
+  rent: number;
+  trending: number;
+  isRented: boolean;
+  isPurchased: boolean;
+}
+
+interface MovieCategory {
+  id: number;
+  name: string;
+  active: boolean;
+  sortOrder: number;
 }

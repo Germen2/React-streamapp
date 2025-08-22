@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import { Header, LoginContent, MoviesCarousel } from "../components";
+import { Header, MoviesCarousel, SignUpContent } from "../components";
 import { useAuthStatus } from "../hooks";
 
-function LoginPage() {
+function SignUpPage() {
   const authStatus = useAuthStatus();
   const navigator = useNavigate();
 
@@ -13,8 +13,9 @@ function LoginPage() {
     <>
       <Header isLoggedIn={authStatus.isLoggedIn} user={authStatus.authUser} />
       <MoviesCarousel />
-      <LoginContent />
+      <SignUpContent />
     </>
   );
 }
-export default LoginPage;
+
+export default SignUpPage;

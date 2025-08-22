@@ -1,4 +1,4 @@
-.carousel,
+/* .carousel,
 .carousel .carousel-item,
 .carousel .carousel-item img {
   height: 100vh;
@@ -13,7 +13,7 @@
 }
 
 .carousel .carousel-item {
-  position: relative; /* Para posicionar el overlay dentro */
+  position: relative;
 }
 
 .carousel .carousel-item::before {
@@ -23,11 +23,52 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* negro con 40% de opacidad */
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
 .carousel .carousel-item img {
   position: relative;
   z-index: 0;
+} */
+
+/* Carousel siempre fijo en el fondo */
+.carousel {
+  position: fixed; /* fijo en la pantalla */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* detrás de todo el contenido */
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay de opacidad */
+.carousel .carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.carousel .carousel-item img {
+  position: relative;
+  z-index: 0;
+}
+
+/* Ocultar controles y captions si quieres */
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-caption {
+  display: none !important;
 }

@@ -18,14 +18,16 @@ function MovieBanner(props: MovieBannerInterface) {
                 id={props.movie.id}
                 title={props.movie.title}
                 year={props.movie.year}
-                date={props.movie.date}
-                category={props.movie.genre}
+                releaseDate={props.movie.releaseDate}
+                categories={props.movie.categories}
                 length={props.movie.length}
                 description={props.movie.description}
                 buy={props.movie.buy}
                 rent={props.movie.rent}
                 active={props.movie.active}
                 trending={props.movie.trending}
+                isPurchased={props.isPurchased}
+                isRented={props.isRented}
               />
             </div>
             <div className="col-lg-4 col-md-12">

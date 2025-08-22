@@ -1,5 +1,5 @@
 /* Contenedor centrado del formulario */
-.login-form-container {
+.signup-form-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15,7 +15,7 @@
 }
 
 /* Estilo de los inputs */
-.login-form .form-control {
+.signup-form .form-control {
   /* background-color: rgba(255, 255, 255, 0.9);
   border: none; */
   color: #ffffff;
@@ -27,7 +27,7 @@
   backdrop-filter: blur(10px);
 }
 
-.login-form input::placeholder {
+.signup-form input::placeholder {
   color: #ffffff;
 }
 .input-group-text {
@@ -42,17 +42,13 @@
 }
 
 /* Estilo del botón */
-.login-form button {
+.signup-form button {
   background-color: var(--primary);
   border: none;
 }
 
-.login-form button:hover {
+.signup-form button:hover {
   color: var(--primary) !important;
   background: #ffffff !important;
   cursor: pointer !important;
-}
-
-.signup-link {
-  text-align: center;
 }

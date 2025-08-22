@@ -9,24 +9,24 @@ function MovieCard(props: movieCardInterface) {
   const handleClick = () => {
     navigate(`/home?id=${props.id}`);
   };
+
   return (
-    <div className="col-lg-2 col-md-4 col-sm-6 d-flex">
-      <div className="movieCard" onClick={handleClick}>
-        <img src={props.img} alt={props.id.toString()} className="img-fluid" />
-        <p className="length">{props.length}</p>
-        {props.trending > 0 ? (
-          <span className="badge-trending">
-            <TrendingUpOutline cssClasses={"trending-up-outline"} />
+    <div className="movieCard" onClick={handleClick}>
+      <div className="moviecard-image-container">
+        <img src={props.img} alt={props.title} className="moviecard-img" />
+        {props.trending > 0 && (
+          <span className="moviecard-badge-trending">
+            <TrendingUpOutline cssClasses="trending-card-icon" />
             {` #${props.trending}`}
           </span>
-        ) : (
-          <></>
         )}
-        <div className="content">
-          <h4>{props.title}</h4>
-        </div>
+      </div>
+      <div className="moviecard-info">
+        <h4 className="moviecard-title">{props.title}</h4>
+        <p className="moviecard-length">{props.length}</p>
       </div>
     </div>
   );
 }
+
 export default MovieCard;

@@ -6,7 +6,9 @@ export function useCategories() {
   const [categories, setCategories] = useState<CategoriesInterface[]>([]);
 
   const fetchData = () => {
-    fetch("/data/categories.json") //esta ruta es de donde obtendras la data (backend)
+    //fetch("/data/categories.json") //esta ruta es de donde obtendras la data (backend)
+    const buscadorUrl: string = import.meta.env.VITE_STREAMAPP_MS_BUSCADOR;
+    fetch(`${buscadorUrl}/categories`)
       .then((res) => res.json())
       .then((data: CategoriesInterface[]) => setCategories(data))
       .then()
