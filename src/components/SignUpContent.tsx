@@ -18,7 +18,6 @@ function SignUpContent() {
     e.preventDefault();
 
     try {
-      console.log(operadorURL);
       const response = await fetch(`${operadorURL}/auth/signup`, {
         method: "POST",
         headers: {
